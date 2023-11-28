@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container login">
+      <h3>Apply for leave</h3>
+      <label for="userName">Username</label>
+      <input
+        type="text"
+        id="userName"
+        placeholder="employee name"
+        value="Ahmad"
+      />
+      <label for="password">Password</label>
+      <input type="text" id="password" placeholder="password" value="1" />
+      <button id="login">Login</button>
+      <span id="errMsg" class="hidden">Wrong username or password</span>
+    </div>
+
+    <div class="container form-container hidden">
+      <h2>Apply for leave</h2>
+      <div class="emp-info">
+        <div>
+          <p id="empName"></p>
+          <p id="annualLeaveTotal"></p>
+          <p id="annualLeaveRemain"></p>
+        </div>
+      </div>
+      <div>
+        <label for="startDate">Start leave Date</label>
+        <input type="date" id="startDate" />
+        <label for="endDate">End leave Date</label>
+        <input type="date" id="endDate" />
+        <label for="leaveType">leave type</label>
+        <select id="leaveType">
+          <option value="Annual leave">Annual leave</option>
+          <option value="Sick leave">Sick leave</option>
+          <option value="Maternity leave">Maternity Leave</option>
+          <option value="Paternity leave">Paternity Leave</option>
+          <option value="Bereavement leave">Bereavement Leave</option>
+          <option value="Emergency leave">Emergency Leave</option>
+          <option value="Unpaid leave">Unpaid Leave</option>
+          <option value="Hajj leave">Hajj / Pilgrimage leave</option>
+        </select>
+        <p id="leaveDays"></p>
+        <textarea
+          name=""
+          id="leaveNote"
+          placeholder="Detail reason..."
+          cols="51"
+          rows="5"
+        ></textarea>
+        <p class="caution" id="caution"></p>
+        <button id="submitBtn">Submit</button>
+      </div>
+    </div>
+
+    <div class="modal hidden">Loading...</div>
+    <script src="./index.mjs" type="module"></script>
+  </body>
+</html>
