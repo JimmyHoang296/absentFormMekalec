@@ -7,7 +7,7 @@ var modal = document.querySelector(".modal");
 var caution = document.querySelector(".caution");
 var emp;
 const URL =
-  "https://script.google.com/macros/s/AKfycbwoDZWFrnlB_zNMOs4F8U5cryK74NCgBJyJNH9g1RR0GzUcYZwHwF1jxU86yeztO_Ht/exec";
+  "https://script.google.com/macros/s/AKfycbxPiJ44J2MbjbmRSXjrjPvD4T-wceo-0D9ZtA6j5Z6WEgZSRRx83kuvte-a8pywK7mI/exec";
 // this is sample data
 // var emp = { empId: 'e001',
 //               empName: 'John',
